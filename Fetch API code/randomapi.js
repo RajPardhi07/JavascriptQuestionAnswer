@@ -435,7 +435,7 @@
 //         else if(i % 5 ==0 ){
 //             console.log("BIZZ")
 //         }
-        
+
 //         else{
 
 //             console.log(i)
@@ -446,8 +446,74 @@
 // Soccer(36)
 
 
-var words = "Hello World"
+// var words = "Hello World"
 
-var result = words.split("").reverse().join('');
+// var result = words.split("").reverse().join('');
 
-console.log(result);
+// console.log(result);
+
+
+// function CountString(inputString) {
+
+
+//     let result = {}
+//     inputString = inputString.toLowerCase();
+//     for (let i = 0; i < inputString.length; i++) {
+//         if (!result[inputString[i]]) {
+//             result[inputString[i]] = 0;
+//         }
+
+//         result[inputString[i]] = result[inputString[i]] + 1;
+//     }
+//      return result;
+
+
+// }
+
+// console.log(CountString("Ashish Saluja"))
+
+
+// function Alphabetical(inputString) {
+
+//     inputString = inputString.replace(/ /g, '');
+
+// for(let i =0; i < inputString.length - 1; i++){
+//     if(inputString[i] > inputString[i+1]){
+//         return false;
+//     }
+// }
+
+// return true
+
+// }
+
+// console.log(Alphabetical("abc def"));
+// console.log(Alphabetical("acd rx"));
+// console.log(Alphabetical("akjhgf"));
+// console.log(Alphabetical("ahfujk"));
+
+
+function isAnagram(str1, str2) {
+
+let result1 = str1.split('').sort().join('')
+let result2 = str2.split('').sort().join('')
+
+// console.log(result1)
+
+// console.log(result2)
+
+
+if(result1 === result2){
+    return true
+}else{
+    return false
+}
+
+
+
+}
+
+
+console.log(isAnagram("cat", "act")); 
+console.log(isAnagram("raj", "kaj")); 
+console.log(isAnagram("night", "thing")); 
