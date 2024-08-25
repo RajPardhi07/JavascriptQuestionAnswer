@@ -493,27 +493,121 @@
 // console.log(Alphabetical("ahfujk"));
 
 
-function isAnagram(str1, str2) {
+// function isAnagram(str1, str2) {
 
-let result1 = str1.split('').sort().join('')
-let result2 = str2.split('').sort().join('')
+// let result1 = str1.split('').sort().join('')
+// let result2 = str2.split('').sort().join('')
 
 // console.log(result1)
 
 // console.log(result2)
 
 
-if(result1 === result2){
-    return true
-}else{
-    return false
+// if(result1 === result2){
+//     return true
+// }else{
+//     return false
+// }
+
+
+
+// }
+
+
+// console.log(isAnagram("cat", "act")); 
+// console.log(isAnagram("raj", "kaj")); 
+// console.log(isAnagram("night", "thing")); 
+
+
+// function perfectNumber(inputNumber) {
+
+//     const properDivisors = [];
+//     for(let i=1; i< inputNumber; i++) {
+//         if(inputNumber % i === 0) {
+//             properDivisors.push(i);
+//         }
+//     }
+
+//     let sum =0;
+//     properDivisors.forEach(d => {sum = sum + d});
+//     console.log("sum", sum)
+
+//     if(sum === inputNumber){
+//         return true;
+//     }
+
+//     return false
+
+// }
+// console.log(perfectNumber(4))
+
+
+
+
+// function isPasswordCorrect(passwordString) {
+
+//     passwordString = passwordString.trim();
+
+//     if (passwordString.length < 8) {
+//         return false;
+//     }
+
+
+//     const lowerCharecter = "abcdefghijklmnopqrstuvwxyz"
+//     const upperCharecter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+//     const numberstring = "1234567890"
+//     const specialchar = "!@"
+
+//     let lowerCharecterExit = false;
+//     let upperCharecterExit = false;
+//     let numberExits = false;
+//     let specialcharExit = false;
+
+//     for (let char of passwordString) {
+
+//         if (lowerCharecter.includes(char)) {
+//             lowerCharecterExit = true
+//         }
+//         else if (upperCharecter.includes(char)) {
+//             upperCharecterExit = true
+//         }
+//         else if (numberstring.includes(char)) {
+//             numberExits = true
+//         }
+//         else if (specialchar.includes(char)) {
+//             specialcharExit = true
+//         }
+//     }
+
+//     if(lowerCharecterExit && upperCharecterExit && numberExits && specialcharExit){
+//         return true;
+//     }
+
+//     return false;
+
+
+// }
+
+
+// console.log(isPasswordCorrect("Flikart2"))
+
+
+
+
+
+function calculateTipAmount(baseAmount, tipPercentage) {
+
+    let result = [];
+
+    for (let i = 0; i < tipPercentage.length; i++) {
+
+        let tipAmount = baseAmount * tipPercentage[i] / 100
+
+        tipAmount = tipAmount.toFixed(2);
+        result.push(tipAmount);
+    }
+
+    return result;
 }
-
-
-
-}
-
-
-console.log(isAnagram("cat", "act")); 
-console.log(isAnagram("raj", "kaj")); 
-console.log(isAnagram("night", "thing")); 
+console.log(calculateTipAmount(1000, [5, 10, 15]))
+console.log(calculateTipAmount(497, [5, 10, 15]))
