@@ -592,22 +592,53 @@
 // console.log(isPasswordCorrect("Flikart2"))
 
 
+// function calculateTipAmount(baseAmount, tipPercentage) {
+
+//     let result = [];
+
+//     for (let i = 0; i < tipPercentage.length; i++) {
+
+//         let tipAmount = baseAmount * tipPercentage[i] / 100
+
+//         tipAmount = tipAmount.toFixed(2);
+//         result.push(tipAmount);
+//     }
+
+//     return result;
+// }
+// console.log(calculateTipAmount(1000, [5, 10, 15]))
+// console.log(calculateTipAmount(497, [5, 10, 15]))
+
+
+// const bigString = "The big string with the word big repeated in the big string."
+
+// const wordFind = "big"
+
+// function findAllOccurence(big, word) {
+//     console.log(big, word)
+//     const result = [];
+
+//     let index = big.indexOf(word);
+//     while (index !== -1) {
+//         result.push(index)
+//         index = big.indexOf(word, index + 1)
+//     }
+
+//     return (result)
+
+
+// }
+
+//   console.log(findAllOccurence(bigString, wordFind)); 
 
 
 
-function calculateTipAmount(baseAmount, tipPercentage) {
+const maxNumber = 5
 
-    let result = [];
+let i =0
 
-    for (let i = 0; i < tipPercentage.length; i++) {
-
-        let tipAmount = baseAmount * tipPercentage[i] / 100
-
-        tipAmount = tipAmount.toFixed(2);
-        result.push(tipAmount);
-    }
-
-    return result;
+while(i < 20){
+   let res=  Math.floor(Math.random())* 5 +1
+    i++;
+    console.log(res)
 }
-console.log(calculateTipAmount(1000, [5, 10, 15]))
-console.log(calculateTipAmount(497, [5, 10, 15]))
