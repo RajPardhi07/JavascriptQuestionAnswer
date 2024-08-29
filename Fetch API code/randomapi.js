@@ -633,12 +633,57 @@
 
 
 
-const maxNumber = 5
+// const maxNumber = 5
 
-let i =0
+// let i = 0
 
-while(i < 20){
-   let res=  Math.floor(Math.random())* 5 +1
-    i++;
-    console.log(res)
+// while (i < 20) {
+//     let res = Math.floor(Math.random()) * 5 + 1
+//     i++;
+//     console.log(res)
+// }
+
+
+
+// function rollADIce(sidesInDices) {
+//     return Math.floor(Math.random() * sidesInDices) + 1;
+// }
+
+// function rollMultipleDice(numberOfDice, sidesInDices) {
+//     let result = [];
+//     let counter = 0;
+//     while (counter < numberOfDice) {
+//         let final = rollADIce(sidesInDices)
+//         result.push(final)
+//         counter++;
+//     }
+
+//     return result;
+
+// }
+
+// console.log(rollMultipleDice(3, 4));
+
+
+function setAlarm(hour, minutes) {
+
+    const now = new Date()
+    const alarmdate = new Date()
+
+    alarmdate.setHours(hour)
+    alarmdate.setMinutes(minutes)
+    const diff = alarmdate - now
+
+    if(diff < 0) {
+        console.log("please provide future time");
+        return;
+    }
+
+    console.log(diff)
+
+    setTimeout(() => {
+        console.log("Alarm Alarm Alram")
+    }, diff);
 }
+
+setAlarm(12, 26)
