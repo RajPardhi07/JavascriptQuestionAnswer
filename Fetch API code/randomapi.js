@@ -665,25 +665,162 @@
 // console.log(rollMultipleDice(3, 4));
 
 
-function setAlarm(hour, minutes) {
+// function setAlarm(hour, minutes) {
 
-    const now = new Date()
-    const alarmdate = new Date()
+//     const now = new Date()
+//     const alarmdate = new Date()
 
-    alarmdate.setHours(hour)
-    alarmdate.setMinutes(minutes)
-    const diff = alarmdate - now
+//     alarmdate.setHours(hour)
+//     alarmdate.setMinutes(minutes)
+//     const diff = alarmdate - now
 
-    if(diff < 0) {
-        console.log("please provide future time");
-        return;
-    }
+//     if(diff < 0) {
+//         console.log("please provide future time");
+//         return;
+//     }
 
-    console.log(diff)
+//     console.log(diff)
 
-    setTimeout(() => {
-        console.log("Alarm Alarm Alram")
-    }, diff);
+//     setTimeout(() => {
+//         console.log("Alarm Alarm Alram")
+//     }, diff);
+// }
+
+// setAlarm(12, 26)
+
+
+
+// let userChoice = prompt(`PLease select one below option
+
+//    1. Press 1 for Addition
+//     2. Press 2 for Subtraction
+//     3. Press 3 for Multiplication
+//     4. Press 4 for Division
+
+//    `)
+
+// userChoice = parseInt(userChoice)
+
+// switch (userChoice) {
+//     case 1:
+
+//         console.log("Addition")
+
+//         let userAddition = acceptTwoNumber()
+//         let resultAddtion = userAddition.firstNumber + userAddition.secondNumber
+//         console.log(`${userAddition.firstNumber} + ${userAddition.secondNumber} = ${resultAddtion}`)
+//         break;
+//     case 2:
+//         console.log("Subtraction")
+//         let userSubtraction = acceptTwoNumber()
+//         let resultSubtraction = userSubtraction.firstNumber - userSubtraction.secondNumber
+//         console.log(`${userSubtraction.firstNumber} - ${userSubtraction.secondNumber} = ${resultSubtraction}`)
+//         break;
+//     case 3:
+//         console.log("Multiplication")
+//         let userMultiplication = acceptTwoNumber()
+//         let resultMultiplication = userMultiplication.firstNumber * userMultiplication.secondNumber
+//         console.log(`${userMultiplication.firstNumber} * ${userMultiplication.secondNumber} = ${resultMultiplication}`)
+//         break;
+//     case 4:
+//         console.log("Division")
+//         let userDivision = acceptTwoNumber()
+//         let resultDivision = userDivision.firstNumber / userDivision.secondNumber
+//         console.log(`${userDivision.firstNumber} / ${userDivision.secondNumber} = ${resultDivision}`)
+//         break;
+
+//     default:
+//         console.log("Wrong Choice")
+//         break;
+// }
+
+
+// function acceptTwoNumber() {
+
+//     let firstNumber = prompt("Enter First Number")
+//     let secondNumber = prompt("Enter Second Number")
+
+//     firstNumber = parseInt(firstNumber)
+//     secondNumber = parseInt(secondNumber)
+
+//     return { firstNumber, secondNumber }
+// }
+
+
+
+let res = Math.floor(Math.random() * 4)
+
+// if(res === 1){
+//     res = "Rock"
+//     console.log("Rock")
+// } if(res === 2){
+//     res = "Scissor"
+//     console.log("Scissor")
+// }
+// else if(res === 3){
+//     res = "Paper"
+//     console.log("Paper")
+// }
+
+
+// let option = prompt(`Please select Number
+//     1.number 1 = Rock
+//     2.number 2 = Scissor
+//     3.number 3 = Paper
+//      `)
+
+// option = parseInt(option)
+
+// switch (option) {
+//     case 1:
+//         console.log("Rock")
+//         break;
+//     case 2:
+//         console.log("Scissor")
+//         break;
+//     case 3:
+//         console.log("Paper")
+//         break;
+
+//     default:
+//         console.log("Select Only 1,2,3")
+//         break;
+// }
+
+// console.log(res)
+
+// TODO LIST 
+
+
+
+let todoList = [];
+
+
+let todoChoice = prompt(`Please Enter A number
+    1.Select 1 for Add todo list
+    2.Select 2 for Show All todo
+    3.Select 3 for Remove todo
+    4. Select 4 for Exit
+    `)
+
+todoChoice = parseInt(todoChoice)
+
+switch (todoChoice) {
+    case 1:
+        let todoEnter = prompt("Enter Todo")
+        console.log(todoEnter)
+        todoList.push(todoEnter)
+        console.log(todoList)
+        break;
+    case 2:
+        todoList.forEach(item => {
+            console.log(item)
+        })
+
+
+        break;
+
+    default:
+        break;
 }
-
-setAlarm(12, 26)
+console.log(todoChoice)
