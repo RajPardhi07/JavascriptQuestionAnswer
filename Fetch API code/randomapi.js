@@ -793,34 +793,129 @@ let res = Math.floor(Math.random() * 4)
 
 
 
-let todoList = [];
+// let todoList = [];
 
 
-let todoChoice = prompt(`Please Enter A number
-    1.Select 1 for Add todo list
-    2.Select 2 for Show All todo
-    3.Select 3 for Remove todo
-    4. Select 4 for Exit
-    `)
+// let todoChoice = prompt(`Please Enter A number
+//     1.Select 1 for Add todo list
+//     2.Select 2 for Show All todo
+//     3.Select 3 for Remove todo
+//     4. Select 4 for Exit
+//     `)
 
-todoChoice = parseInt(todoChoice)
+// todoChoice = parseInt(todoChoice)
 
-switch (todoChoice) {
-    case 1:
-        let todoEnter = prompt("Enter Todo")
-        console.log(todoEnter)
-        todoList.push(todoEnter)
-        console.log(todoList)
-        break;
-    case 2:
-        todoList.forEach(item => {
-            console.log(item)
-        })
+// switch (todoChoice) {
+//     case 1:
+//         let todoEnter = prompt("Enter Todo")
+//         console.log(todoEnter)
+//         todoList.push(todoEnter)
+//         console.log(todoList)
+//         break;
+//     case 2:
+//         todoList.forEach(item => {
+//             console.log(item)
+//         })
 
 
-        break;
+//         break;
 
-    default:
-        break;
-}
-console.log(todoChoice)
+//     default:
+//         break;
+// }
+// console.log(todoChoice)
+
+// 2. Write a JavaScript conditional statement to find the sign of the product of three numbers. Display an alert box with the specified sign.
+// Sample numbers : 3, -7, 2
+// Output : The sign is -
+
+
+
+// let num1 =1;
+// let num2 = -2;
+// let num3 = 3;
+
+// let product = num1 * num2 * num3
+
+// if(product > 0){
+//     alert("This is positive")
+//     console.log("Positive")
+// }
+// if(product < 0){
+//     alert("Sign in number -")
+//     console.log("Negative")
+// }
+
+
+// let arr = [0,-1,4]
+
+// let sorted = arr.reverse().sort()
+
+// console.log(sorted)
+
+
+// let num = 15;
+
+// for(let i =0; i<=num; i++){
+
+//     if(i % 2 === 0){
+//         console.log( i , "= is Even Number")
+//     }else{
+//         console.log(i, "= is Odd Number")
+//     }
+// }
+
+// let pattern =''
+
+// for(let i =1; i<=7; i++){
+
+//     for(let j=1; j<=i; j++){
+//         pattern = pattern + "😀😂 "
+//     }
+
+//     pattern = pattern + "\n"
+// }
+
+// console.log(pattern);
+
+
+// 1. Write a JavaScript function that reverses a number.
+// Example x = 32243;
+
+// function reverseNumber(num){
+
+//     // console.log(num)
+
+//     let ans = parseInt(num.toString().split('').reverse().join(''), 10)
+
+//     console.log(ans)
+// }
+
+// reverseNumber(32243);
+// reverseNumber(123456789);
+
+// 4. Write a JavaScript function that returns a string that has letters in alphabetical order.
+// webmaster
+
+// function SortedFunction(str){
+
+//     console.log(str)
+
+//     let ans = str.split('').sort().join('')
+//     console.log(ans)
+// }
+
+// SortedFunction("webmaster")
+
+
+
+// function Upper(str){
+
+//    let ans =  str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+
+//     console.log(ans)
+
+// }
+
+// Upper("the quick brown fox")
+
